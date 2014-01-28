@@ -1,4 +1,4 @@
-source source "https://rubygems.org"
+source "https://rubygems.org"
 gem "bundler"
 gem "rspec"
 gem "coveralls", require: false
