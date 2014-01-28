@@ -30,7 +30,7 @@ irb(main):002:0> perm = Permutation.new 42, [13, 7, 17]
 => #<Permutation:…>
 irb(main):003:0> perm.map 42
 => 3333656047352411619
-irb(main):003:0> perm.map 3333656047352411619
+irb(main):004:0> perm.map 3333656047352411619
 => 42
 ```
 
@@ -47,8 +47,7 @@ this can save you from having to index those tokens in the database.
 
 ## See also
 
-There is currently also a [Python implementation][7] and a limited [Go
-implementation][6] of this library.
+This library is also implemented in [Python][7] and [Go][6].
 
 [6]: //github.com/attilaolah/permutation.go
 [7]: //github.com/attilaolah/permutation.py
