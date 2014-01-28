@@ -2,7 +2,7 @@
 
 [![Bitdeli](https://d2weczhvl823v0.cloudfront.net/attilaolah/permutation.rb/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 [![Build Status](https://travis-ci.org/attilaolah/permutation.rb.png?branch=master)](https://travis-ci.org/attilaolah/permutation.rb)
-[![Coverage Status](https://coveralls.io/repos/attilaolah/permutation.rb/badge.png)](https://coveralls.io/r/attilaolah/permutation.rb)
+[![Coverage Status](https://coveralls.io/repos/attilaolah/permutation.rb/badge.png?branch=master)](https://coveralls.io/r/attilaolah/permutation.rb)
 [![Dependency Status](https://gemnasium.com/attilaolah/permutation.rb.png)](https://gemnasium.com/attilaolah/permutation.rb)
 
 This package implements a simple, configurable permutation on the set of 64-bit
