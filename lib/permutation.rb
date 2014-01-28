@@ -1,4 +1,5 @@
 class Permutation
+
   def initialize(seed, params, bit_length=64)
     @bit_length = bit_length
     @mask = (1 << bit_length)-1
