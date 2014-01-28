@@ -30,7 +30,7 @@ irb(main):002:0> perm = Permutation.new 42, [13, 7, 17]
 => #<Permutation:…>
 irb(main):003:0> perm.map 42
 => 3333656047352411619
-irb(main):004:0> perm.map 3333656047352411619
+irb(main):004:0> perm.unmap 3333656047352411619
 => 42
 ```
 
