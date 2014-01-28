@@ -28,6 +28,7 @@ class Permutation
   end
 end
 
+
 private
 class XORShift
 
