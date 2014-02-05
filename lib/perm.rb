@@ -7,15 +7,16 @@ class Permutation
     @masks = (0.upto bit_length*2).map { |i| xorshift.next & ((1 << (i >> 1)) ^ @mask) }
   end
 
-  def map(num)
+  def map_to(num)
     do_map num, (0.upto @bit_length-1)
   end
 
-  def unmap(num)
+  def map_from(num)
     do_map num, ((@bit_length-1).downto 0)
   end
 
   private
+
   def do_map(num, range)
     for i in range
       bit = 1 << i
@@ -29,8 +30,8 @@ class Permutation
   end
 end
 
-
 private
+
 class XORShift
 
   def initialize(seed, params, bitmask)

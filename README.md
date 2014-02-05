@@ -58,4 +58,4 @@ This library is also implemented in [Python][7] and [Go][6].
 
 [Public domain][3].
 
-[3]: //github.com/attilaolah/permutation.go/blob/master/LICENSE
+[3]: //github.com/attilaolah/permutation.rb/blob/master/LICENSE

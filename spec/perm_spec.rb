@@ -10,29 +10,29 @@ describe Permutation do
 
     perm = Permutation.new 42, [13, 7, 17]
 
-    describe "#map" do
+    describe "#map_to" do
 
       it "should work" do
-        perm.map(42).should == 3333656047352411619
+        perm.map_to(42).should == 3333656047352411619
       end
 
       it "should map the first #{RUNS} numbers to different ones" do
-        (0..RUNS).map do |i|
-          perm.map(i).should_not == i
+        (0..RUNS).map_to do |i|
+          perm.map_to(i).should_not == i
         end
       end
 
     end
 
-    describe "#unmap" do
+    describe "#map_from" do
 
       it "should work" do
-        perm.unmap(3333656047352411619).should == 42
+        perm.map_from(3333656047352411619).should == 42
       end
 
       it "should revert map for the first #{RUNS} numbers" do
-        (0..RUNS).map do |i|
-          perm.unmap(perm.map(i)).should == i
+        (0..RUNS).map_to do |i|
+          perm.map_from(perm.map_to(i)).should == i
         end
       end
 
@@ -44,29 +44,29 @@ describe Permutation do
 
     perm = Permutation.new 42, [13, 7, 17], 8
 
-    describe "#map" do
+    describe "#map_to" do
 
       it "should work" do
-        perm.map(37).should == 240
+        perm.map_to(37).should == 240
       end
 
       it "should map the first #{RUNS} numbers to different ones" do
-        (0..RUNS).map do |i|
-          perm.map(i).should_not == i
+        (0..RUNS).map_to do |i|
+          perm.map_to(i).should_not == i
         end
       end
 
     end
 
-    describe "#unmap" do
+    describe "#map_from" do
 
       it "should work" do
-        perm.unmap(240).should == 37
+        perm.map_from(240).should == 37
       end
 
       it "should revert map for the first #{RUNS} numbers" do
-        (0..RUNS).map do |i|
-          perm.unmap(perm.map(i)).should == i
+        (0..RUNS).map_to do |i|
+          perm.map_from(perm.map_to(i)).should == i
         end
       end
 
@@ -78,29 +78,29 @@ describe Permutation do
 
     perm = Permutation.new 42, [13, 7, 17], 128
 
-    describe "#map" do
+    describe "#map_to" do
 
       it "should work" do
-        perm.map(56).should == 106682778517753340346976813432521896052
+        perm.map_to(56).should == 106682778517753340346976813432521896052
       end
 
       it "should map the first #{RUNS} numbers to different ones" do
-        (0..RUNS).map do |i|
-          perm.map(i).should_not == i
+        (0..RUNS).map_to do |i|
+          perm.map_to(i).should_not == i
         end
       end
 
     end
 
-    describe "#unmap" do
+    describe "#map_from" do
 
       it "should work" do
-        perm.unmap(106682778517753340346976813432521896052).should == 56
+        perm.map_from(106682778517753340346976813432521896052).should == 56
       end
 
       it "should revert map for the first #{RUNS} numbers" do
-        (0..RUNS).map do |i|
-          perm.unmap(perm.map(i)).should == i
+        (0..RUNS).map_to do |i|
+          perm.map_from(perm.map_to(i)).should == i
         end
       end
 
