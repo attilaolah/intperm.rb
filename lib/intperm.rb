@@ -1,9 +1,11 @@
+require 'data'
+
 class Permutation
 
-  def initialize(seed, params, bit_length=64)
+  def initialize(seed, bit_length=64)
     @bit_length = bit_length
     @mask = (1 << bit_length)-1
-    xorshift = XORShift.new seed, params, @mask
+    xorshift = XORShift.new seed, @mask
     @masks = (0.upto bit_length*2).map { |i| xorshift.next & ((1 << (i >> 1)) ^ @mask) }
   end
 
@@ -34,9 +36,9 @@ private
 
 class XORShift
 
-  def initialize(seed, params, bitmask)
+  def initialize(seed, bitmask)
     @seed = seed
-    @a, @b, @c = params
+    @a, @b, @c = TRIPLETS[seed % TRIPLETS.length]
     @bitmask = bitmask
   end
 

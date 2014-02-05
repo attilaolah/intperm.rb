@@ -19,21 +19,17 @@ seed is kept secret.
 
 ## Usage
 
-Create a new `Permutation` instance by passing in two parameters:
-
-* The first parameter is the seed, which can be any random value.
-* The next paramer is a triplet of integers used by the XORShift to expand the
-  seed. Valid values are listed in [George Marsaglia's paper][2], on *page 3*.
+Create a new `Permutation` instance by passing in a seed:
 
 ```ruby
 irb(main):001:0> require 'intperm'
 => true
-irb(main):002:0> perm = Permutation.new 42, [13, 7, 17]
+irb(main):002:0> perm = Permutation.new 42
 => #<Permutation:…>
-irb(main):003:0> perm.map_to 42
-=> 3333656047352411619
-irb(main):004:0> perm.unmap_from 3333656047352411619
-=> 42
+irb(main):003:0> perm.map_to 37
+=> 13750393542137160527
+irb(main):004:0> perm.unmap_from 13750393542137160527
+=> 37
 ```
 
 ## Use cases
