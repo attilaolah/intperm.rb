@@ -1,4 +1,4 @@
-require "permutation"
+require 'intperm'
 
 
 RUNS = 1000
@@ -17,7 +17,7 @@ describe Permutation do
       end
 
       it "should map the first #{RUNS} numbers to different ones" do
-        (0..RUNS).map_to do |i|
+        (0..RUNS).map do |i|
           perm.map_to(i).should_not == i
         end
       end
@@ -31,7 +31,7 @@ describe Permutation do
       end
 
       it "should revert map for the first #{RUNS} numbers" do
-        (0..RUNS).map_to do |i|
+        (0..RUNS).map do |i|
           perm.map_from(perm.map_to(i)).should == i
         end
       end
@@ -51,7 +51,7 @@ describe Permutation do
       end
 
       it "should map the first #{RUNS} numbers to different ones" do
-        (0..RUNS).map_to do |i|
+        (0..RUNS).map do |i|
           perm.map_to(i).should_not == i
         end
       end
@@ -65,7 +65,7 @@ describe Permutation do
       end
 
       it "should revert map for the first #{RUNS} numbers" do
-        (0..RUNS).map_to do |i|
+        (0..RUNS).map do |i|
           perm.map_from(perm.map_to(i)).should == i
         end
       end
@@ -85,7 +85,7 @@ describe Permutation do
       end
 
       it "should map the first #{RUNS} numbers to different ones" do
-        (0..RUNS).map_to do |i|
+        (0..RUNS).map do |i|
           perm.map_to(i).should_not == i
         end
       end
@@ -99,7 +99,7 @@ describe Permutation do
       end
 
       it "should revert map for the first #{RUNS} numbers" do
-        (0..RUNS).map_to do |i|
+        (0..RUNS).map do |i|
           perm.map_from(perm.map_to(i)).should == i
         end
       end
