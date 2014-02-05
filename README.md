@@ -1,9 +1,9 @@
 # Permutation
 
-[![Bitdeli](https://d2weczhvl823v0.cloudfront.net/attilaolah/permutation.rb/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
-[![Build Status](https://travis-ci.org/attilaolah/permutation.rb.png?branch=master)](https://travis-ci.org/attilaolah/permutation.rb)
-[![Coverage Status](https://coveralls.io/repos/attilaolah/permutation.rb/badge.png?branch=master)](https://coveralls.io/r/attilaolah/permutation.rb)
-[![Dependency Status](https://gemnasium.com/attilaolah/permutation.rb.png)](https://gemnasium.com/attilaolah/permutation.rb)
+[![Bitdeli](https://d2weczhvl823v0.cloudfront.net/attilaolah/intperm.rb/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+[![Build Status](https://travis-ci.org/attilaolah/intperm.rb.png?branch=master)](https://travis-ci.org/attilaolah/intperm.rb)
+[![Coverage Status](https://coveralls.io/repos/attilaolah/intperm.rb/badge.png?branch=master)](https://coveralls.io/r/attilaolah/intperm.rb)
+[![Dependency Status](https://gemnasium.com/attilaolah/intperm.rb.png)](https://gemnasium.com/attilaolah/intperm.rb)
 
 This package implements a simple, configurable permutation on the set of 64-bit
 integers.
@@ -26,13 +26,13 @@ Create a new `Permutation` instance by passing in two parameters:
   seed. Valid values are listed in [George Marsaglia's paper][2], on *page 3*.
 
 ```ruby
-irb(main):001:0> require 'permutation'
+irb(main):001:0> require 'intperm'
 => true
 irb(main):002:0> perm = Permutation.new 42, [13, 7, 17]
 => #<Permutation:…>
-irb(main):003:0> perm.map 42
+irb(main):003:0> perm.map_to 42
 => 3333656047352411619
-irb(main):004:0> perm.unmap 3333656047352411619
+irb(main):004:0> perm.unmap_from 3333656047352411619
 => 42
 ```
 
@@ -51,11 +51,11 @@ this can save you from having to index those tokens in the database.
 
 This library is also implemented in [Python][7] and [Go][6].
 
-[6]: //github.com/attilaolah/permutation.go
-[7]: //github.com/attilaolah/permutation.py
+[6]: //github.com/attilaolah/intperm.go
+[7]: //github.com/attilaolah/intperm.py
 
 ## License
 
 [Public domain][3].
 
-[3]: //github.com/attilaolah/permutation.rb/blob/master/LICENSE
+[3]: //github.com/attilaolah/intperm.rb/blob/master/LICENSE
