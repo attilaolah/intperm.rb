@@ -6,7 +6,8 @@ Gem::Specification.new do |s|
   s.description = "A simple pseudo-random permutation of arbitrary sized integers."
   s.authors     = ["Attila Oláh"]
   s.email       = "attila@attilaolah.eu"
-  s.files       = ["lib/intperm.rb"]
+  s.files       = ["lib/intperm.rb",
+                   "lib/parameters.yaml"]
   s.homepage    =
     'https://github.com/attilaolah/intperm.rb'
   s.license     = "Public Domain"
