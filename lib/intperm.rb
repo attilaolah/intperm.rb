@@ -3,10 +3,10 @@ require 'data'
 class Permutation
 
   def initialize(seed, bit_length=64)
-    @bit_length = bit_length
     @mask = (1 << bit_length)-1
     xorshift = XORShift.new seed, @mask
     @masks = (0.upto bit_length*2).map { |i| xorshift.next & ((1 << (i >> 1)) ^ @mask) }
+    @bit_length = bit_length
   end
 
   def map_to(num)
