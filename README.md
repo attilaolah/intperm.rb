@@ -65,3 +65,7 @@ This library is also implemented in [Python][7] and [Go][6].
 [Public domain][3].
 
 [3]: //github.com/attilaolah/intperm.rb/blob/master/LICENSE
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/attilaolah/intperm.rb/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
