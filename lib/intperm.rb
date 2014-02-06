@@ -41,6 +41,8 @@ class Permutation
   end
 end
 
+TRIPLETS = YAML.load_file File.join File.dirname(__FILE__), 'parameters.yaml'
+
 # XOR shift helper class.
 # Used for expanding the seed to a random stream.
 class XORShift
@@ -56,5 +58,3 @@ class XORShift
     @seed ^= @bitmask & (@seed << @c)
   end
 end
-
-TRIPLETS = YAML.load_file File.join File.dirname(__FILE__), 'parameters.yaml'
