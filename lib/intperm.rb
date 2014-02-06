@@ -1,4 +1,4 @@
-require 'data'
+require 'yaml'
 
 # Main permutation class.
 class Permutation
@@ -56,3 +56,5 @@ class XORShift
     @seed ^= @bitmask & (@seed << @c)
   end
 end
+
+TRIPLETS = YAML.load_file File.join File.dirname(__FILE__), 'parameters.yaml'
