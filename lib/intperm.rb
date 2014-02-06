@@ -32,8 +32,6 @@ class Permutation
   end
 end
 
-private
-
 class XORShift
 
   def initialize(seed, bitmask)
