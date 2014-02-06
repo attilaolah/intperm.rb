@@ -2,8 +2,7 @@
 
 [![Bitdeli](https://d2weczhvl823v0.cloudfront.net/attilaolah/intperm.rb/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 [![Build Status](https://travis-ci.org/attilaolah/intperm.rb.png?branch=master)](https://travis-ci.org/attilaolah/intperm.rb)
-[![Coverage Status](https://coveralls.io/repos/attilaolah/intperm.rb/badge.png?branch=master)](https://coveralls.io/r/attilaolah/intperm.rb)
-[![Dependency Status](https://gemnasium.com/attilaolah/intperm.rb.png)](https://gemnasium.com/attilaolah/intperm.rb)
+[![Coverage Status](https://coveralls.io/repos/attilaolah/intperm.rb/badge.png)](https://coveralls.io/r/attilaolah/intperm.rb)
 [![Gem Version](https://badge.fury.io/rb/intperm.png)](http://badge.fury.io/rb/intperm)
 
 This package implements a simple, configurable permutation on the set of 64-bit
