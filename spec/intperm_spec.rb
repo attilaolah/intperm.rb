@@ -1,10 +1,9 @@
 require 'intperm'
 
 
-RUNS = 1000
-
-
 describe Permutation do
+
+  RUNS = 1000
 
   context "default bit length" do
 
