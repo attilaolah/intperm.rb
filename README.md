@@ -67,9 +67,3 @@ This library is also implemented in [Python][7] and [Go][6].
 
 [6]: //github.com/attilaolah/intperm.go
 [7]: //github.com/attilaolah/intperm.py
-
-## License
-
-[Public domain][3].
-
-[3]: //github.com/attilaolah/intperm.rb/blob/master/LICENSE
