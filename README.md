@@ -1,7 +1,6 @@
-# Permutation
+# Integer Permutation ![License](https://pypip.in/license/intperm/badge.png)
 
-![Bitdeli](https://d2weczhvl823v0.cloudfront.net/attilaolah/intperm.rb/trend.png)
-![Bitdeli](https://pypip.in/license/intperm/badge.png)
+[![Bitdeli](https://d2weczhvl823v0.cloudfront.net/attilaolah/intperm.rb/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 [![Build Status](https://travis-ci.org/attilaolah/intperm.rb.png?branch=master)](https://travis-ci.org/attilaolah/intperm.rb)
 [![Coverage Status](https://coveralls.io/repos/attilaolah/intperm.rb/badge.png)](https://coveralls.io/r/attilaolah/intperm.rb)
 [![Gem Version](https://badge.fury.io/rb/intperm.png)](http://badge.fury.io/rb/intperm)
