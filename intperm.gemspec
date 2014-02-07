@@ -1,9 +1,9 @@
 Gem::Specification.new do |s|
   s.name        = "intperm"
-  s.version     = "1.1.0"
-  s.date        = "2014-01-28"
+  s.version     = "1.2.0"
+  s.date        = "2014-02-07"
   s.summary     = "Permutation"
-  s.description = "A simple pseudo-random permutation of arbitrary sized integers."
+  s.description = "Pseudo-random permutation of arbitrary size integers."
   s.authors     = ["Attila Oláh"]
   s.email       = "attila@attilaolah.eu"
   s.files       = ["lib/intperm.rb",
