@@ -32,6 +32,17 @@ irb(main):004:0> perm.unmap_from 13750393542137160527
 => 37
 ```
 
+Not providing a seed will create a random permutation:
+
+```ruby
+irb(main):001:0> require 'intperm'
+=> true
+irb(main):002:0> perm = Permutation.new 42
+=> #<Permutation:…>
+irb(main):003:0> perm.map_from perm.map_to 37
+=> 37
+```
+
 ## Use cases
 
 Use cases may vary, but an example that I find useful is generating
