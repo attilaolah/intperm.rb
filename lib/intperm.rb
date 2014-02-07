@@ -4,9 +4,7 @@ require 'yaml'
 class Permutation
   def initialize(seed = nil, bit_length = 64)
     @mask = (1 << bit_length) - 1
-    if seed.nil?
-      seed = Random.rand @mask
-    end
+    seed = Random.rand @mask if seed.nil?
     xorshift = XORShift.new seed, @mask
     @masks = (0.upto bit_length * 2).map do |i|
       xorshift.next & ((1 << (i >> 1)) ^ @mask)
