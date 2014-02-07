@@ -108,4 +108,20 @@ describe Permutation do
 
   end
 
+  context 'random permutation' do
+
+    perm = Permutation.new
+
+    describe '#map_from' do
+
+      it "should revert map for the first #{RUNS} numbers" do
+        (0..RUNS).map do |i|
+          perm.map_from(perm.map_to(i)).should == i
+        end
+      end
+
+    end
+
+  end
+
 end
